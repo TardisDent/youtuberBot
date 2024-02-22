@@ -1,0 +1,24 @@
+/YoutubeVideoCreation
+    /cmd
+        /main
+            - main.go         # The entry point of the program
+    /pkg
+        /wikipedia          # For fetching and processing Wikipedia articles
+            - wikipedia.go
+        /pdfreader          # For extracting text from PDFs
+            - pdfreader.go
+        /textprocessor      # For NLP tasks and commentary generation
+            - textprocessor.go
+        /tts                # For text-to-speech conversion
+            - tts.go
+        /videoassembly      # For combining audio and visuals into a video
+            - videoassembly.go
+        /youtubeuploader    # For uploading videos to YouTube
+            - youtubeuploader.go
+    /internal
+        /config             # For configuration files and constants
+            - config.go
+    /api                   # If integrating with a custom GPT like Sage, define its interface here
+        - sage.go
+    go.mod                  # Define your module and dependencies here
+    go.sum                  # Automatically generated file for module verification
